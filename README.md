@@ -25,8 +25,13 @@ Note: These instructions may contain extra steps for some projects. So do not fe
 	```
 	npm run serve
 	```
-1. Run the user interface
+1. Run the user interface (particularly applies to electron/console apps)
 	```
 	npm run start
 	```
 1. Alternative: Sometimes the server will supply an ip address that can be opened in browser.
+
+## Troubleshooting
+
+#### `npm run serve` results in an error
+This is likely a result of the server depending on another process that is not running. If the app uses MongoDB, for example, this can be remedied by running `mongodb` in another tab. You may need to run as sudo/admin.
