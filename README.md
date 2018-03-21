@@ -1,1 +1,1 @@
-# building-npm-projects-tut
+# How to build and run an NPM project
